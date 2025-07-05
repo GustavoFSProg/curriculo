@@ -5,12 +5,26 @@ const Container = styled.div`
   display: flex;
   width: 100vw;
   height: auto;
-  padding: 50px;
+  padding: 70px;
   background: lightgray;
   justify-content: center;
 
   @media screen and (max-width: 800) {
     flex-direction: column;
+  }
+`;
+
+const Text = styled.div`
+  display: flex;
+  width: 300px;
+  /* height: auto; */
+  font-size: 20px;
+
+  @media screen and (max-width: 800px) {
+    /* flex-direction: column; */
+    font-size: 18px;
+    width: 220px;
+    margin-left: -20px;
   }
 `;
 
@@ -23,9 +37,7 @@ function Navbar() {
         alt="foto"
         style={{ position: "absolute", left: 13, top: 13 }}
       />
-      <div>
-        <h2>Gustavo Fernando Sohne</h2>
-      </div>
+      <Text>Gustavo Fernando Sohne</Text>
     </Container>
   );
 }

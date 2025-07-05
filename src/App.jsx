@@ -18,6 +18,20 @@ const Container = styled.div`
   justify-content: center;
 `;
 
+const Wrapper = styled.div`
+  width: 50%;
+  align-items: center;
+  padding: 30px;
+  // paddingLeft: "130",
+  background: lightgreen;
+  // justifyContent: "center",
+  height: 400px;
+
+  @media screen and (max-width: 800px) {
+    height: auto;
+  }
+`;
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -25,17 +39,7 @@ function App() {
     <>
       <Navbar />
       <Container>
-        <div
-          style={{
-            width: "50%",
-            alignItems: "center",
-            padding: "30px",
-            // paddingLeft: "130",
-            background: "lightgreen",
-            // justifyContent: "center",
-            height: "400px",
-          }}
-        >
+        <Wrapper>
           <h1>Habilidades:</h1>
           <ul>
             <li>Conhecimento intermediario em </li>
@@ -69,7 +73,7 @@ function App() {
             />
             <img width="100" src={css} alt="node" />
           </div>
-        </div>
+        </Wrapper>
       </Container>
     </>
   );
