@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 30px;
   // paddingLeft: "130",
-  background: lightgreen;
+  background: #4fabc9;
   // justifyContent: "center",
   height: 400px;
 
