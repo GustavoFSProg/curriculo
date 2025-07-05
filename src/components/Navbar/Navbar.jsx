@@ -19,6 +19,7 @@ const Text = styled.div`
   width: 300px;
   /* height: auto; */
   font-size: 20px;
+  margin-bottom: 17px;
 
   @media screen and (max-width: 800px) {
     /* flex-direction: column; */
@@ -35,9 +36,14 @@ function Navbar() {
         src={foto}
         width="100"
         alt="foto"
-        style={{ position: "absolute", left: 13, top: 13 }}
+        style={{ position: "absolute", left: 16, top: 16 }}
       />
-      <Text>Gustavo Fernando Sohne</Text>
+      <div stle={{ flexDirection: "column", alignItems: "center" }}>
+        <Text>Gustavo Fernando Sohne</Text>
+        <Text style={{ fontSize: "16px", marginLeft: "10px" }}>
+          gustavosohne38@gmail.com
+        </Text>
+      </div>
     </Container>
   );
 }

@@ -52,6 +52,7 @@ function App() {
             <br />
             <li>CSS</li>
           </ul>
+          <br />
           <div style={{ marginLeft: "60px" }}>
             <img
               style={{ marginRight: "30px" }}
