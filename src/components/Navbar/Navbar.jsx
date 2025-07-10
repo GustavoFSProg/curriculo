@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   width: 100vw;
   height: auto;
-  padding: 46px;
+  padding: 60px;
   background: lightgray;
   justify-content: center;
 
@@ -34,7 +34,7 @@ function Navbar() {
     <Container>
       <img
         src={foto}
-        width="100"
+        width="122"
         alt="foto"
         style={{ position: "absolute", left: 16, top: 16 }}
       />
