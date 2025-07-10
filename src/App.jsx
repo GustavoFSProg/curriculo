@@ -8,7 +8,7 @@ import node from "./assets/node.png";
 import react from "./assets/react.svg";
 import html from "./assets/html-5.png";
 import css from "./assets/css.png";
-import blog from "./assets/new-blog.jpg";
+import blog from "./assets/novo-blog.jpg";
 import jogos from "./assets/jogos-cello.jpg";
 
 const Container = styled.div`
