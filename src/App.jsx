@@ -13,7 +13,7 @@ import jogos from "./assets/jogos-cello.jpg";
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: auto;
   background: lightblue;
   align-items: center;
@@ -23,30 +23,31 @@ const Container = styled.div`
   overflow-x: hidden;
 
   @media screen and (max-width: 800px) {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     width: 100%;
   }
 `;
 
 const Wrapper = styled.div`
   /* margin-top: -190px; */
+  display: flex;
 
   width: 50%;
   align-items: center;
   padding: 30px;
   padding-bottom: 120px;
-  // paddingLeft: "130",
+  padding-left: -30px;
   background: #4fabc9;
-  // justifyContent: "center",
+  justify-content: center;
   height: 400px;
 
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 67%;
+    width: 100vw;
     overflow-x: hidden;
-    margin-left: -110px;
+    margin-left: 47px;
   }
 `;
 
@@ -63,16 +64,45 @@ const Imagens = styled.div`
   }
 `;
 
-function App() {
-  const [count, setCount] = useState(0);
+const Img = styled.img`
+  width: 500px;
+  /* margin-right: 30px; */
 
+  @media screen and (max-width: 800px) {
+    width: 290px;
+    /* margin-left: -80px; */
+  }
+`;
+
+const ContainerPages = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @media screen and (max-width: 800px) {
+    margin-left: -5px;
+  }
+`;
+
+function App() {
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        width: "100vw",
+        flexDirection: "column",
+        overflowX: "hidden",
+      }}
+    >
       <Navbar />
       <Container>
         <Wrapper>
           <div>
-            <h1>Conhecimento:</h1>
+            <h1>Conhecimentos:</h1>
             <ul style={{ fontSize: "21px" }}>
               <br />
               <li>Node js </li>
@@ -107,38 +137,24 @@ function App() {
             </Imagens>
           </div>
         </Wrapper>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginTop: "70px",
-          }}
-        >
+        <ContainerPages>
           <h1>Portfólio:</h1>
           <a href="https://new-blog-vite.netlify.app/">
-            <img
-              width="500"
-              src={blog}
-              alt="node"
-              style={{ marginRight: "30px" }}
-            />
+            <Img src={blog} alt="node" />
           </a>
 
           <a href="https://jogoscello.com.br/">
-            <img
-              width="500"
+            <Img
               src={jogos}
               alt="node"
               style={{
-                marginRight: "30px",
-
                 marginTop: "50px",
               }}
             />
           </a>
-        </div>
+        </ContainerPages>
       </Container>
-    </>
+    </div>
   );
 }
 

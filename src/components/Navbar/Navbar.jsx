@@ -8,12 +8,12 @@ const Container = styled.div`
   padding: 60px;
   background: lightgray;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    width: 90vw;
-    overflow-x: hidden;
+    width: 68vw;
+    /* overflow-x: hidden; */
   }
 `;
 
@@ -47,7 +47,7 @@ const TextContainer = styled.div`
     /* flex-direction: column; */
     font-size: 10px;
     width: 220px;
-    margin-left: 68px;
+    margin-left: 40px;
     margin-top: -30px;
   }
 `;
@@ -71,6 +71,14 @@ const Git = styled.span`
   }
 `;
 
+const A = styled.a`
+  text-decoration: none;
+
+  @media screen and (max-width: 800px) {
+    font-size: 13px;
+  }
+`;
+
 function Navbar() {
   return (
     <Container>
@@ -80,12 +88,9 @@ function Navbar() {
         <Text>gustavosohne38@gmail.com</Text>
         <Text>
           <Git>Github:</Git>
-          <a
-            style={{ textDecoration: "none" }}
-            href="https://github.com/GustavoFSProg"
-          >
+          <A href="https://github.com/GustavoFSProg">
             https://github.com/GustavoFSProg
-          </a>
+          </A>
         </Text>
       </TextContainer>
     </Container>
