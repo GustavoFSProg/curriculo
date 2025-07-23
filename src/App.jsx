@@ -20,6 +20,12 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-bottom: 200px;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 800px) {
+    overflow-x: hidden;
+    width: 100%;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -35,7 +41,25 @@ const Wrapper = styled.div`
   height: 400px;
 
   @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
     height: auto;
+    width: 67%;
+    overflow-x: hidden;
+    margin-left: -110px;
+  }
+`;
+
+const Imagens = styled.div`
+  display: flex;
+  margin-left: 60px;
+  margin-top: 30px;
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-left: -5px;
   }
 `;
 
@@ -47,38 +71,40 @@ function App() {
       <Navbar />
       <Container>
         <Wrapper>
-          <h1>Conhecimento:</h1>
-          <ul style={{ fontSize: "21px" }}>
+          <div>
+            <h1>Conhecimento:</h1>
+            <ul style={{ fontSize: "21px" }}>
+              <br />
+              <li>Node js </li>
+              <br />
+              <li> React js</li>
+              <br />
+              <li>HTML</li>
+              <br />
+              <li>CSS</li>
+            </ul>
             <br />
-            <li>Node js </li>
-            <br />
-            <li> React js</li>
-            <br />
-            <li>HTML</li>
-            <br />
-            <li>CSS</li>
-          </ul>
-          <br />
-          <div style={{ marginLeft: "60px", marginTop: "30px" }}>
-            <img
-              style={{ marginRight: "30px" }}
-              width="100"
-              src={node}
-              alt="node"
-            />
-            <img
-              width="100"
-              src={react}
-              alt="node"
-              style={{ marginRight: "30px" }}
-            />
-            <img
-              width="100"
-              src={html}
-              alt="node"
-              style={{ marginRight: "30px" }}
-            />
-            <img width="100" src={css} alt="node" />
+            <Imagens>
+              <img
+                style={{ marginRight: "30px" }}
+                width="100"
+                src={node}
+                alt="node"
+              />
+              <img
+                width="100"
+                src={react}
+                alt="node"
+                style={{ marginRight: "30px" }}
+              />
+              <img
+                width="100"
+                src={html}
+                alt="node"
+                style={{ marginRight: "30px" }}
+              />
+              <img width="100" src={css} alt="node" />
+            </Imagens>
           </div>
         </Wrapper>
         <div

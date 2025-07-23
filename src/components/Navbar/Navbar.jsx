@@ -12,7 +12,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    width: 74vw;
+    width: 90vw;
     overflow-x: hidden;
   }
 `;
@@ -47,7 +47,7 @@ const TextContainer = styled.div`
     /* flex-direction: column; */
     font-size: 10px;
     width: 220px;
-    margin-left: 45px;
+    margin-left: 68px;
     margin-top: -30px;
   }
 `;
