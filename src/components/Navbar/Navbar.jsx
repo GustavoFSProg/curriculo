@@ -47,7 +47,7 @@ const TextContainer = styled.div`
     /* flex-direction: column; */
     font-size: 10px;
     width: 220px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: -30px;
   }
 `;
@@ -58,7 +58,7 @@ const Foto = styled.img`
   left: 16px;
   top: 16px;
   @media screen and (max-width: 800px) {
-    width: 75px;
+    width: 80px;
     /* position: relative; */
   }
 `;
