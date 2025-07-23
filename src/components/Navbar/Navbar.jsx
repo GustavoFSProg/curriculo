@@ -8,9 +8,12 @@ const Container = styled.div`
   padding: 60px;
   background: lightgray;
   justify-content: center;
+  overflow-x: hidden;
 
-  @media screen and (max-width: 800) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
+    width: 74vw;
+    overflow-x: hidden;
   }
 `;
 
@@ -44,7 +47,7 @@ const TextContainer = styled.div`
     /* flex-direction: column; */
     font-size: 10px;
     width: 220px;
-    margin-left: -20px;
+    margin-left: 45px;
     margin-top: -30px;
   }
 `;
