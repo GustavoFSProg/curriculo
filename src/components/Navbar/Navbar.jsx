@@ -17,33 +17,74 @@ const Container = styled.div`
 const Text = styled.div`
   display: flex;
   width: 300px;
-  /* height: auto; */
+  height: auto;
   font-size: 20px;
   margin-bottom: 17px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  margin-left: 10px;
 
   @media screen and (max-width: 800px) {
     /* flex-direction: column; */
-    font-size: 18px;
+    font-size: 13.5px;
     width: 220px;
     margin-left: -20px;
+    margin-bottom: 7px;
+  }
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    /* flex-direction: column; */
+    font-size: 10px;
+    width: 220px;
+    margin-left: -20px;
+    margin-top: -30px;
+  }
+`;
+
+const Foto = styled.img`
+  width: 122px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  @media screen and (max-width: 800px) {
+    width: 70px;
+    /* position: relative; */
+  }
+`;
+
+const Git = styled.span`
+  margin-right: 8px;
+  @media screen and (max-width: 800px) {
+    display: none;
+    /* position: relative; */
   }
 `;
 
 function Navbar() {
   return (
     <Container>
-      <img
-        src={foto}
-        width="122"
-        alt="foto"
-        style={{ position: "absolute", left: 16, top: 16 }}
-      />
-      <div stle={{ flexDirection: "column", alignItems: "center" }}>
+      <Foto src={foto} alt="foto" />
+      <TextContainer>
         <Text>Gustavo Fernando Sohne</Text>
-        <Text style={{ fontSize: "16px", marginLeft: "10px" }}>
-          gustavosohne38@gmail.com
+        <Text>gustavosohne38@gmail.com</Text>
+        <Text>
+          <Git>Github:</Git>
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://github.com/GustavoFSProg"
+          >
+            https://github.com/GustavoFSProg
+          </a>
         </Text>
-      </div>
+      </TextContainer>
     </Container>
   );
 }
