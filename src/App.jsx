@@ -68,6 +68,7 @@ const Imagens = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     margin-left: -5px;
+    margin-top: -5px;
   }
 `;
 
@@ -110,8 +111,8 @@ function App() {
         <Container>
           <Wrapper>
             <div>
-              <h1>Conhecimentos:</h1>
-              <ul style={{ fontSize: "21px" }}>
+              <h2>Conhecimentos:</h2>
+              <ul style={{ fontSize: "21px", marginTop: "-10px" }}>
                 <br />
                 <li>Node js </li>
                 <br />
