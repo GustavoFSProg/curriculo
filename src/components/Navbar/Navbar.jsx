@@ -84,7 +84,9 @@ function Navbar() {
     <Container>
       <Foto src={foto} alt="foto" />
       <TextContainer>
-        <Text>Gustavo Fernando Sohne</Text>
+        <Text style={{ fontWeight: "bold", fontSize: "15px" }}>
+          Gustavo Fernando Sohne
+        </Text>
         <Text>gustavosohne38@gmail.com</Text>
         <Text>
           <Git>Github:</Git>
