@@ -10,6 +10,7 @@ import html from "./assets/html-5.png";
 import css from "./assets/css.png";
 import blog from "./assets/novo-blog.jpg";
 import jogos from "./assets/jogos-cello.jpg";
+import Footer from "./components/Footer/Footer";
 
 const Container = styled.div`
   display: flex;
@@ -90,71 +91,74 @@ const ContainerPages = styled.div`
 
 function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "100vw",
-        flexDirection: "column",
-        overflowX: "hidden",
-      }}
-    >
-      <Navbar />
-      <Container>
-        <Wrapper>
-          <div>
-            <h1>Conhecimentos:</h1>
-            <ul style={{ fontSize: "21px" }}>
+    <>
+      <div
+        style={{
+          display: "flex",
+          width: "100vw",
+          flexDirection: "column",
+          overflowX: "hidden",
+        }}
+      >
+        <Navbar />
+        <Container>
+          <Wrapper>
+            <div>
+              <h1>Conhecimentos:</h1>
+              <ul style={{ fontSize: "21px" }}>
+                <br />
+                <li>Node js </li>
+                <br />
+                <li> React js</li>
+                <br />
+                <li>HTML</li>
+                <br />
+                <li>CSS</li>
+              </ul>
               <br />
-              <li>Node js </li>
-              <br />
-              <li> React js</li>
-              <br />
-              <li>HTML</li>
-              <br />
-              <li>CSS</li>
-            </ul>
-            <br />
-            <Imagens>
-              <img
-                style={{ marginRight: "30px" }}
-                width="100"
-                src={node}
-                alt="node"
-              />
-              <img
-                width="100"
-                src={react}
-                alt="node"
-                style={{ marginRight: "30px" }}
-              />
-              <img
-                width="100"
-                src={html}
-                alt="node"
-                style={{ marginRight: "30px" }}
-              />
-              <img width="100" src={css} alt="node" />
-            </Imagens>
-          </div>
-        </Wrapper>
-        <ContainerPages>
-          <h1>Portfólio:</h1>
-          <a href="https://new-blog-vite.netlify.app/">
-            <Img src={blog} alt="node" />
-          </a>
+              <Imagens>
+                <img
+                  style={{ marginRight: "30px" }}
+                  width="100"
+                  src={node}
+                  alt="node"
+                />
+                <img
+                  width="100"
+                  src={react}
+                  alt="node"
+                  style={{ marginRight: "30px" }}
+                />
+                <img
+                  width="100"
+                  src={html}
+                  alt="node"
+                  style={{ marginRight: "30px" }}
+                />
+                <img width="100" src={css} alt="node" />
+              </Imagens>
+            </div>
+          </Wrapper>
+          <ContainerPages>
+            <h1>Portfólio:</h1>
+            <a href="https://new-blog-vite.netlify.app/">
+              <Img src={blog} alt="node" />
+            </a>
 
-          <a href="https://jogoscello.com.br/">
-            <Img
-              src={jogos}
-              alt="node"
-              style={{
-                marginTop: "50px",
-              }}
-            />
-          </a>
-        </ContainerPages>
-      </Container>
-    </div>
+            <a href="https://jogoscello.com.br/">
+              <Img
+                src={jogos}
+                alt="node"
+                style={{
+                  marginTop: "50px",
+                }}
+              />
+            </a>
+          </ContainerPages>
+        </Container>
+      </div>
+      <Footer />
+    </>
   );
 }
 
