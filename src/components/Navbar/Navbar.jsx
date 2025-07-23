@@ -79,7 +79,7 @@ const A = styled.a`
   text-decoration: none;
 
   @media screen and (max-width: 800px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 
