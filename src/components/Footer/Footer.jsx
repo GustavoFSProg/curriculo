@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import whats from "../../assets/whats.png";
 
 const Container = styled.div`
   display: flex;
@@ -40,14 +41,14 @@ const TitleContainer = styled.div`
 
 const Span = styled.div`
   display: flex;
-  font-size: 14px;
+  font-size: 15px;
   /* letter-spacing: 10px; */
   justify-content: center;
   align-items: center;
   font-weight: none;
 
   @media screen and (max-width: 850px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 
@@ -55,7 +56,20 @@ export default function Footer() {
   return (
     <Container>
       <TitleContainer>
-        <Span>(51) 984-57-6589</Span>
+        <div
+          style={{
+            display: "flex",
+            width: "300px",
+            height: "auto",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <span style={{ marginRight: "5px", marginTop: "5px" }}>
+            <img src={whats} width="26" />
+          </span>
+          <Span>(51) 984-57-6589</Span>
+        </div>
         <span
           style={{
             fontSize: "13px",
