@@ -6,10 +6,11 @@ const Container = styled.div`
   align-items: center;
   width: 100vw;
   height: auto;
-  background: black;
+  background: #006bb3;
   padding-top: 15px;
   padding-bottom: 25px;
-  color: #808080;
+  color: #b3e0ff;
+  /* color: #808080; */
   position: absolute;
   margin-bottom: 0px;
 

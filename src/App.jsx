@@ -33,6 +33,8 @@ const Wrapper = styled.div`
   /* margin-top: -190px; */
   display: flex;
 
+  margin-top: 50px;
+
   width: 50%;
   align-items: center;
   padding: 30px;
@@ -41,6 +43,7 @@ const Wrapper = styled.div`
   background: #4fabc9;
   justify-content: center;
   height: 400px;
+  border-radius: 5%;
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -49,6 +52,9 @@ const Wrapper = styled.div`
     width: 100vw;
     overflow-x: hidden;
     margin-left: 47px;
+    margin-top: 1px;
+
+    border-radius: 0%;
   }
 `;
 

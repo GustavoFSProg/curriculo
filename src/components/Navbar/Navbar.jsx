@@ -6,7 +6,9 @@ const Container = styled.div`
   width: 100vw;
   height: auto;
   padding: 60px;
-  background: lightgray;
+  background: #66c2ff;
+  /* background: lightgray; */
+
   justify-content: center;
   overflow: hidden;
 
@@ -57,6 +59,8 @@ const Foto = styled.img`
   position: absolute;
   left: 16px;
   top: 16px;
+  border-radius: 10%;
+
   @media screen and (max-width: 800px) {
     width: 80px;
     /* position: relative; */
