@@ -22,6 +22,7 @@ const Container = styled.div`
   flex-direction: column;
   padding-bottom: 200px;
   overflow-x: hidden;
+  // overflow
 
   @media screen and (max-width: 800px) {
     /* overflow-x: hidden; */
